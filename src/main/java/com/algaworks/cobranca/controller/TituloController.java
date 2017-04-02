@@ -37,14 +37,7 @@ public class TituloController {
 		mv.addObject(new Titulo());
 		return mv;
 	}
-
-	// Testes
 	
-	
-	
-	
-	
-
 	@RequestMapping(method = RequestMethod.POST) // Tipo de requisição
 	public String salvar(@Validated Titulo titulo, Errors errors, RedirectAttributes attributes) {
 
