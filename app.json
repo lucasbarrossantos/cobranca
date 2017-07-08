@@ -1,6 +1,0 @@
-{
-  "name": "cobranca",
-  "description": "This is a small demo application for showing how to run a Spring Boot application on Heroku.",
-  "image": "heroku/java",
-  "addons": [ "heroku-postgresql" ]
-}

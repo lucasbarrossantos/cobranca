@@ -1,1 +1,1 @@
-web java -Dserver.port=$PORT $JAVA_OPTS -jar target/app.jar
+web:    java -cp target/classes:target/dependency/* -Dserver.port=$PORT com/algaworks/cobranca/CobrabcaApplication
