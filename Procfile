@@ -1,1 +1,1 @@
-web:    java -cp target/classes:target/dependency/* -Dserver.port=$PORT com/algaworks/cobranca/CobrabcaApplication
+web:    java -cp target/classes:target/dependency/* -Dserver.port=$PORT com/algaworks/cobranca/CobrancaApplication
