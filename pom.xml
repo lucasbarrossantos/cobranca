@@ -6,7 +6,6 @@
 	<groupId>com.algaworks</groupId>
 	<artifactId>cobranca</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<packaging>war</packaging>
 
 	<name>cobranca</name>
 	<description>Demo project for Spring Boot</description>
@@ -68,8 +67,26 @@
 
 	</dependencies>
 
+	<scm>
+		<url>https://github.com/britter/spring-boot-heroku-demo</url>
+		<connection>scm:git:git://github.com/britter/spring-boot-heroku-demo.git</connection>
+		<developerConnection>scm:git:ssh://git@github.com/britter/spring-boot-heroku-demo.git</developerConnection>
+		<tag>HEAD</tag>
+	</scm>
+
+
 	<build>
-		<finalName>${project.artifactId}</finalName>
+		<finalName>app</finalName>
+		<resources>
+			<resource>
+				<directory>src/main/resources</directory>
+				<filtering>true</filtering>
+			</resource>
+			<resource>
+				<directory>src/main/resources</directory>
+				<filtering>false</filtering>
+			</resource>
+		</resources>
 		<plugins>
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
